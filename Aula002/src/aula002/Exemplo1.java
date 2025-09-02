@@ -21,32 +21,29 @@ public class Exemplo1{
         System.out.println("Media: "+media);
         
         
-        if((media >= 6) && (faltas <= 18)){
-            System.out.print("Senhor " + name);
-            System.out.println(", Parabens o senhor foi aprovado!!!");
+            if((media >= 6) && (faltas <= 18)){
+                System.out.print("Senhor " + name);
+                System.out.println(", Parabens o senhor foi aprovado!!!");
         }  
-            if(faltas > 18){
-                System.out.println("Perdao, o senhor foi reprovado por falta");
-              }else{
-                if((media < 6)&&( faltas <=18)){
-                    System.out.print("Senhor " + name);
-                    System.out.println(", o senhor reprovou por nota mas, uma prova de recuperacao existe e caso passe, aprovado em!");
-                    System.out.println("*** exame!!! boa sorte!!! ***");
-                    System.out.print("Nota do exame: ");
-                    float rec = input.nextFloat();
+              if(faltas > 18){
+                 System.out.println("Perdao, o senhor foi reprovado por falta");
+                    }else{
+                        if(media < 6){
+                               System.out.print("Senhor " + name);
+                               System.out.println(", o senhor reprovou por nota mas, uma prova de recuperacao existe e caso passe, aprovado em!");
+                               System.out.println("*** exame!!! boa sorte!!! ***");
+                               System.out.print("Nota do exame: ");
+                               float rec = input.nextFloat();
                 
-                    float newmedia = (rec + media)/2;
+                               float newmedia = (rec + media)/2;
                 
-                        if(newmedia >= 6){
-                            System.out.println("aprovado mano boa");
+                                 if(newmedia >= 6){
+                                    System.out.println("aprovado mano boa");
                             
-                        }else{
-                            System.out.println("O senhor foi reprovado, perdao");
-                        }
-                        
-                   
-                }
-    
+                                    }else{
+                                       System.out.println("O senhor foi reprovado, perdao");
+                 }                
+              }
          }
     }
 }
